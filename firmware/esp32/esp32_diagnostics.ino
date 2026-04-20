@@ -125,7 +125,7 @@ void pollHoldingRegisters() {
 void setup() {
   Serial.begin(115200);
   delay(500);
-  Serial.println("PLC Fault Analyzer ESP32 Diagnostics Client");
+  Serial.println("PLC-AI-Fault-Analyzer ESP32 Diagnostics Client");
   connectWiFi();
 }
 
