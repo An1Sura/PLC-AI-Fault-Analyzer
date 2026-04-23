@@ -22,7 +22,7 @@ logging.basicConfig(
     level=os.getenv("LOG_LEVEL", "INFO").upper(),
     format="%(asctime)s %(levelname)s %(name)s: %(message)s",
 )
-logger = logging.getLogger("plc-ai-fault-analyzer")
+logger = logging.getLogger("logiclatch")
 
 REGISTER_COUNT = 15
 
@@ -388,7 +388,7 @@ def run_diagnostics(state: PLCState) -> DiagnosticsResponse:
 config = BridgeConfig()
 bridge = PLCBridge(config)
 app = FastAPI(
-    title="PLC-AI-Fault-Analyzer",
+    title="LogicLatch",
     description="Industrial diagnostics bridge for CODESYS, Modbus TCP, FastAPI, and ESP32 demos.",
     version="1.0.0",
 )

@@ -1,8 +1,8 @@
-# PLC-AI-Fault-Analyzer
+# LogicLatch
 
 ## Project Overview
 
-PLC-AI-Fault-Analyzer is an industrial diagnostics bridge that connects PLC logic, Modbus TCP data, a Python API layer, and an embedded ESP32 client into one coherent troubleshooting system. It is built to demonstrate how real automation faults can be surfaced, classified, and explained across controls and software boundaries.
+LogicLatch is an industrial diagnostics bridge that connects PLC logic, Modbus TCP data, a Python API layer, and an embedded ESP32 client into one coherent troubleshooting system. It is built to demonstrate how real automation faults can be surfaced, classified, and explained across controls and software boundaries.
 
 The project models a small industrial cell where CODESYS publishes machine status through holding registers, FastAPI converts raw register values into useful diagnostics, and an ESP32 client independently polls the same PLC data for embedded field visibility.
 
@@ -120,7 +120,7 @@ curl -X POST http://127.0.0.1:8000/api/mock/scenario \
 ## Folder Structure
 
 ```text
-plc-ai-fault-analyzer/
+logiclatch/
 ├── README.md
 ├── requirements.txt
 ├── .env.example
